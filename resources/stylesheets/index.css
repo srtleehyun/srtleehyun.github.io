@@ -195,8 +195,11 @@ body > .main > .info-container > .right-container > .military-container {
 
 body > .main > .info-container > .right-container > .list {
     min-width: 50rem;
-    border-bottom: 0.0625rem solid rgb(0, 0, 0);
     padding-bottom: 1.875rem;
+}
+
+body > .main > .info-container > .right-container > .list:not(:last-of-type) {
+    border-bottom: 0.0625rem solid rgb(0, 0, 0);
 }
 
 body > .main > .info-container > .right-container > * > .total-container {
