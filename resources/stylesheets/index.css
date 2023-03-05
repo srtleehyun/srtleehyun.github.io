@@ -1,0 +1,330 @@
+:root {
+    --concept-color: 234, 236, 238;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+body {
+    background-color: rgb(var(--concept-color));
+    height: 100%;
+    margin: 0;
+}
+
+a:link, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-block: unset;
+    margin-inline: unset;
+    padding-inline: unset;
+}
+
+h3 {
+    margin: 1.875rem 0;
+}
+
+body > .main {
+    width: 100%;
+    height: 100%;
+}
+
+body > .main > .salutation-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: none;
+}
+
+body > .main > .salutation-container.visible {
+    display: inline-block;
+}
+
+body > .main > .salutation-container > .content-container {
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+body > .main > .salutation-container > .content-container > .title {
+    font-size: 1.625rem;
+    margin: 2rem 0;
+    user-select: none;
+}
+
+body > .main > .salutation-container > .content-container > .text {
+    font-weight: 400;
+    margin-bottom: 0.625rem;
+    user-select: none;
+}
+
+body > .main > .salutation-container > .content-container > .text:last-of-type {
+    margin-bottom: 1rem;
+}
+
+body > .main > .salutation-container > .content-container > .icon {
+    font-size: 1.625rem;
+}
+
+body > .main > .salutation-container > .content-container > .icon:hover {
+    color: rgb(var(--concept-color-blue));
+    cursor: pointer;
+}
+
+
+body > .main > .info-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+body > .main > .info-container.visible {
+    display: flex;
+}
+
+body > .main > .info-container > .left-container {
+    left: 0;
+    width: 25rem;
+    height: 100%;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+}
+
+body > .main > .info-container > .left-container > .profile-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+
+body > .main > .info-container > .left-container > .profile-container > * {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin: 0.5rem 0;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .headshot-wrap > .headshot-image {
+    border: 0.0625rem solid rgb(255, 255, 255);
+    border-radius: 50%;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .name-wrap {
+    font-size: 1.425rem;
+    user-select: none;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container {
+    border-top: 0.0625rem solid rgb(255, 255, 255);
+    border-spacing: 1rem;
+    padding: 1rem 3rem;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container > .text {
+    font-size: 1rem;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container > * {
+    margin: 0.625rem 0;
+    user-select: none;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container > .link-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container > .link-container > .link > .mail-image {
+    width: 1.75rem;
+}
+
+body > .main > .info-container > .left-container > .profile-container > .contact-container > .link-container > .link > .facebook-image {
+    width: 2.15rem;
+}
+
+body > .main > .info-container > .right-container {
+    left: 40rem;
+    align-items: center;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+    position: absolute;
+    user-select: none;
+}
+
+body > .main > .info-container > .right-container > .education-container,
+body > .main > .info-container > .right-container > .military-container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > .main > .info-container > .right-container > .list {
+    min-width: 50rem;
+    border-bottom: 0.0625rem solid rgb(0, 0, 0);
+    padding-bottom: 1.875rem;
+}
+
+body > .main > .info-container > .right-container > * > .total-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 1.625rem;
+}
+
+body > .main > .info-container > .right-container > * > .total-container:not(:first-of-type) {
+    margin-top: 1.375rem;
+}
+
+body > .main > .info-container > .right-container > * > .total-container > .item {
+    margin-left: 1.625rem;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body > .main > .info-container > .right-container > * > .total-container > .icon-wrap > .icon {
+    font-size: 1.325rem;
+}
+
+body > .main > .info-container > .right-container > .skil-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body > .main > .info-container > .right-container > .skil-container > .image-wrap > .skil-image {
+    width: 4.325rem;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    margin: 0 0.325rem;
+}
+
+
+body > .main > .info-container > .navigator {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    background-color: white;
+    border: 0.0325rem solid rgb(0, 0, 0);
+    border-radius: 30%;
+    display: flex;    
+    font-size: 1.325rem;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    margin: 1rem;
+    z-index: 1;
+}
+
+body > .main > .info-container > .navigator > .menu-container > .menu > .icon {
+    border-radius: 30%;
+    padding: 0.325rem;
+}
+
+body > .main > .info-container > .navigator > .menu-container > .menu > .icon:hover {
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+/* 애니메이션 */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .2}
+    to {opacity: 1}
+}
+
+/* 반응형 */
+@media screen and (max-width: 1025px) {
+    body > .main > .salutation-container > .content-container > .title {
+        font-size: 1.325rem;
+        white-space:nowrap;
+    }
+    body > .main > .salutation-container > .content-container > .text {
+        font-size: 0.975rem;
+        white-space:nowrap;
+    }
+
+    body > .main > .info-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    body > .main > .info-container > .left-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    body > .main > .info-container > .left-container > .profile-container {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body > .main > .info-container > .right-container {
+        display: none;
+    }
+
+    body > .main > .info-container > .navigator {
+        display: none;
+    }
+
+}
